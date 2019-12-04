@@ -1,7 +1,86 @@
-html {
-    background: black;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-canvas {
-    border: 1px solid white;
+.top-navbar ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.top-navbar a {
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.top-navbar a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.splash {
+  height: 100vh;
+  background: url(https://source.unsplash.com/random) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash h1 {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+main {
+  color: #333;
+}
+
+main article {
+  padding: 2rem 1rem;
+  overflow: auto;
+}
+
+main article:nth-child(odd) {
+  background: #fee;
+}
+
+main article .article-image {
+  float: right;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+main article:nth-child(odd) .article-image {
+  float: left;
+}
+
+main article .article-text {
+  margin: 1rem;
+}
+
+main article h2 {
+  margin: 1rem;
+}
+
+main article p {
+  margin: 1rem;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
+footer p {
+  text-align: right;
+  padding: 1rem;
 }
