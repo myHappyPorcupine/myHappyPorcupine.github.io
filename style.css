@@ -6,9 +6,8 @@
 .top-navbar ul {
   list-style: none;
   background: rgba(0, 0, 0, 1);
-  display: flex;
   color: #fff;
-  position: fixed;
+  text-align: center;
   top: 0;
   right: 0;
   left: 0;
@@ -19,6 +18,7 @@
   text-decoration: none;
   color: inherit;
   display: block;
+  border-bottom: 1px solid #333;
 }
 
 .top-navbar a:hover {
@@ -54,13 +54,9 @@ main article:nth-child(odd) {
 }
 
 main article .article-image {
-  float: right;
   border-radius: 50%;
-  margin: 2rem;
-}
-
-main article:nth-child(odd) .article-image {
-  float: left;
+  margin: 2rem auto;
+  display: block;
 }
 
 main article .article-text {
@@ -83,4 +79,24 @@ footer {
 footer p {
   text-align: right;
   padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .top-navbar ul {
+    display: flex;
+    position: fixed;
+  }
+
+  .top-navbar a {
+    border: none;
+  }
+
+  main article .article-image {
+    margin: 2rem;
+    float: right;
+  }
+
+  main article:nth-child(odd) .article-image {
+    float: left;
+  }
 }
