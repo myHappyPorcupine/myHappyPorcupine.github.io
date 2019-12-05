@@ -5,8 +5,9 @@
 
 .top-navbar ul {
   list-style: none;
-  background: rgba(0, 0, 0, 1);
+  background: #000;
   color: #fff;
+  box-shadow: 0 0 1px #000;
   text-align: center;
   top: 0;
   right: 0;
@@ -81,7 +82,7 @@ footer p {
   padding: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .top-navbar ul {
     display: flex;
     position: fixed;
